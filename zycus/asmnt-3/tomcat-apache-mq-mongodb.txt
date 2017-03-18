@@ -1,0 +1,7 @@
+ELB - for load balancing and HA
+Apache 1 and 2 - using mod_jk as front end servers for tomcat servers(two servers for HA )
+tomcat 1 and 2 - running behind apache with mod_jk doing the load balancing and HA
+Mongodb cluster running on ec2 instances with connections from application running on tomcat
+ORACLE running on RDS with MULTI-AZ for HA
+Active mq cluster running on ec2 instances
+All ec2-instances,rds,and clusters are launched in to VPC so that only ELB is exposed for incoming connections
